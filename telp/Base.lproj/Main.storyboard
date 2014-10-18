@@ -16,7 +16,7 @@
                         <color key="barTintColor" red="0.011372744105756283" green="0.53880453109741211" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="jGZ-NH-RaC" kind="relationship" relationship="rootViewController" id="PZa-nE-CDR"/>
+                        <segue destination="jGZ-NH-RaC" kind="relationship" relationship="rootViewController" id="BRi-dN-mfC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdg-Ub-IeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -36,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RA0-fG-V2g" customClass="FBLoginView">
-                                <rect key="frame" x="163" y="208" width="257" height="55"/>
+                                <rect key="frame" x="122" y="202" width="257" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="RA0-fG-V2g" secondAttribute="height" multiplier="257:55" id="sFi-Fo-npn"/>
@@ -44,6 +44,9 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="RA0-fG-V2g" secondAttribute="centerX" constant="98.5" id="SOH-5C-bnG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Telp" id="cmC-8I-KpZ"/>
                 </viewController>
@@ -51,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="664" y="462"/>
         </scene>
-        <!--View Controller-->
+        <!--Help Form View Controller-->
         <scene sceneID="bhp-8F-Qi4">
             <objects>
-                <viewController id="3pc-98-u1g" sceneMemberID="viewController">
+                <viewController id="3pc-98-u1g" customClass="HelpFormViewController" customModule="telp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g5P-aU-vcV"/>
                         <viewControllerLayoutGuide type="bottom" id="3gV-fR-aKD"/>
@@ -64,6 +67,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="N8c-DS-i8W"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAQ-0o-gxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

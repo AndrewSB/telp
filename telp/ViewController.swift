@@ -15,9 +15,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 
         
-//        var facebookLoginButton = FBLoginView()
-//        facebookLoginButton.frame = CGRectOffset(facebookLoginButton.frame, self.view.center.x, self.view.center.y)
-//        self.view.addSubview(facebookLoginButton)
         
     }
 
