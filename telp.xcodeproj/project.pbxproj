@@ -53,9 +53,9 @@
 		4624D90419F22B0500F6B5F8 /* telpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = telpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4624D90919F22B0500F6B5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4624D90A19F22B0500F6B5F8 /* telpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telpTests.swift; sourceTree = "<group>"; };
-		4624D91419F22C0000F6B5F8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		4624D91519F22C0000F6B5F8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		4624D91619F22C0000F6B5F8 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		4624D91419F22C0000F6B5F8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = telp/Bolts.framework; sourceTree = "<group>"; };
+		4624D91519F22C0000F6B5F8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = telp/Parse.framework; sourceTree = "<group>"; };
+		4624D91619F22C0000F6B5F8 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = telp/ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		4624D91A19F22C2600F6B5F8 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4624D91C19F22C2D00F6B5F8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4624D91E19F22C3400F6B5F8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -69,7 +69,7 @@
 		4624D92F19F22CAB00F6B5F8 /* telp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "telp-Bridging-Header.h"; sourceTree = "<group>"; };
 		4624D93319F22CF400F6B5F8 /* CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
 		4624D93419F22CF400F6B5F8 /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
-		4624D93619F232FA00F6B5F8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		4624D93619F232FA00F6B5F8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = telp/FacebookSDK.framework; sourceTree = "<group>"; };
 		46715BB619F23803004185F7 /* HelpFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpFormViewController.swift; sourceTree = "<group>"; };
 		C913B2940C8646D798F89181 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,7 +146,6 @@
 			children = (
 				4624D93319F22CF400F6B5F8 /* CustomObject.h */,
 				4624D93419F22CF400F6B5F8 /* CustomObject.m */,
-				4624D92E19F22C8800F6B5F8 /* Frameworks */,
 				4624D8F319F22B0500F6B5F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -169,7 +168,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4624D92E19F22C8800F6B5F8 /* Frameworks */ = {
+		FEC1604BE096432B9EDB745D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				4624D93619F232FA00F6B5F8 /* FacebookSDK.framework */,
@@ -186,13 +185,6 @@
 				4624D91419F22C0000F6B5F8 /* Bolts.framework */,
 				4624D91519F22C0000F6B5F8 /* Parse.framework */,
 				4624D91619F22C0000F6B5F8 /* ParseFacebookUtils.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FEC1604BE096432B9EDB745D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
 				2EA7735E64EC48E59B26C470 /* libPods.a */,
 			);
 			name = Frameworks;

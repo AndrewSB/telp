@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9TY-HZ-X0l">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -27,7 +25,7 @@
         <!--Telp-->
         <scene sceneID="5Wm-hF-hQw">
             <objects>
-                <viewController id="jGZ-NH-RaC" sceneMemberID="viewController">
+                <viewController id="jGZ-NH-RaC" customClass="ViewController" customModule="telp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vXr-OC-Usc"/>
                         <viewControllerLayoutGuide type="bottom" id="Bhm-cH-e3b"/>
@@ -45,7 +43,7 @@
                                 </constraints>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WdK-6N-HVM">
-                                <rect key="frame" x="229" y="378" width="143" height="30"/>
+                                <rect key="frame" x="229" y="356" width="143" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="0Ag-pX-vqd"/>
                                     <constraint firstAttribute="width" secondItem="WdK-6N-HVM" secondAttribute="height" multiplier="143:30" id="czz-rY-cVW"/>
@@ -54,13 +52,16 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-Aa-Gqc">
-                                <rect key="frame" x="279" y="481" width="43" height="30"/>
+                                <rect key="frame" x="279" y="438" width="43" height="30"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonWasHit:" destination="jGZ-NH-RaC" eventType="touchUpInside" id="WFo-nL-b64"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nlp-TT-mwl">
-                                <rect key="frame" x="229" y="432" width="143" height="30"/>
+                                <rect key="frame" x="229" y="397" width="143" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nlp-TT-mwl" secondAttribute="height" multiplier="143:30" id="qhL-iX-RXR"/>
                                     <constraint firstAttribute="width" constant="143" id="vUh-Ov-FDO"/>
@@ -72,20 +73,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="nlp-TT-mwl" secondAttribute="centerX" constant="-0.5" id="0ZY-Ow-9sA"/>
-                            <constraint firstItem="nlp-TT-mwl" firstAttribute="top" secondItem="WdK-6N-HVM" secondAttribute="bottom" constant="24" id="6xU-ie-EQh"/>
+                            <constraint firstItem="nlp-TT-mwl" firstAttribute="top" secondItem="WdK-6N-HVM" secondAttribute="bottom" constant="11" id="6xU-ie-EQh"/>
                             <constraint firstAttribute="centerX" secondItem="3xW-Aa-Gqc" secondAttribute="centerX" constant="-0.5" id="79H-o9-y6O"/>
                             <constraint firstAttribute="centerX" secondItem="RA0-fG-V2g" secondAttribute="centerX" id="7qf-iv-3uR"/>
                             <constraint firstAttribute="centerX" secondItem="WdK-6N-HVM" secondAttribute="centerX" constant="-0.5" id="9yl-gs-G0F"/>
                             <constraint firstItem="RA0-fG-V2g" firstAttribute="leading" secondItem="vxC-Pw-9tH" secondAttribute="leading" constant="40" id="DH6-mC-7Av"/>
                             <constraint firstAttribute="trailing" secondItem="RA0-fG-V2g" secondAttribute="trailing" constant="40" id="KvF-Z6-gjW"/>
-                            <constraint firstItem="nlp-TT-mwl" firstAttribute="leading" secondItem="vxC-Pw-9tH" secondAttribute="leadingMargin" constant="213" id="cMd-os-hpn"/>
-                            <constraint firstItem="WdK-6N-HVM" firstAttribute="leading" secondItem="vxC-Pw-9tH" secondAttribute="leadingMargin" constant="213" id="cnO-9f-jsH"/>
-                            <constraint firstItem="3xW-Aa-Gqc" firstAttribute="top" secondItem="nlp-TT-mwl" secondAttribute="bottom" constant="19" id="us9-NF-lNb"/>
+                            <constraint firstItem="3xW-Aa-Gqc" firstAttribute="top" secondItem="nlp-TT-mwl" secondAttribute="bottom" constant="11" id="us9-NF-lNb"/>
                             <constraint firstItem="RA0-fG-V2g" firstAttribute="top" secondItem="vXr-OC-Usc" secondAttribute="bottom" constant="199" id="xxH-ys-leA"/>
-                            <constraint firstItem="WdK-6N-HVM" firstAttribute="top" secondItem="RA0-fG-V2g" secondAttribute="bottom" constant="42" id="z93-Xq-3fJ"/>
+                            <constraint firstItem="WdK-6N-HVM" firstAttribute="top" secondItem="RA0-fG-V2g" secondAttribute="bottom" constant="20" id="z93-Xq-3fJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Telp" id="cmC-8I-KpZ"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="WdK-6N-HVM" id="BeE-s5-UIc"/>
+                        <outlet property="passwordTextField" destination="nlp-TT-mwl" id="InF-gE-krD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fsp-DU-F17" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
