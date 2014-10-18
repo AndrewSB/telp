@@ -35,17 +35,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RA0-fG-V2g" customClass="FBLoginView">
-                                <rect key="frame" x="122" y="202" width="257" height="55"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RA0-fG-V2g" customClass="FBLoginView">
+                                <rect key="frame" x="40" y="263" width="520" height="73"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="RA0-fG-V2g" secondAttribute="height" multiplier="257:55" id="sFi-Fo-npn"/>
+                                    <constraint firstAttribute="height" constant="73" id="6w1-pd-pkS"/>
+                                    <constraint firstAttribute="width" secondItem="RA0-fG-V2g" secondAttribute="height" multiplier="307:73" id="rii-6b-92w"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="RA0-fG-V2g" secondAttribute="centerX" constant="98.5" id="SOH-5C-bnG"/>
+                            <constraint firstAttribute="centerX" secondItem="RA0-fG-V2g" secondAttribute="centerX" id="7qf-iv-3uR"/>
+                            <constraint firstItem="RA0-fG-V2g" firstAttribute="leading" secondItem="vxC-Pw-9tH" secondAttribute="leading" constant="40" id="DH6-mC-7Av"/>
+                            <constraint firstAttribute="trailing" secondItem="RA0-fG-V2g" secondAttribute="trailing" constant="40" id="KvF-Z6-gjW"/>
+                            <constraint firstItem="RA0-fG-V2g" firstAttribute="top" secondItem="vXr-OC-Usc" secondAttribute="bottom" constant="199" id="xxH-ys-leA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Telp" id="cmC-8I-KpZ"/>
