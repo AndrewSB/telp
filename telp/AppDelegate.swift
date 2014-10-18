@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Parse.setApplicationId("gzbDPHZE5ojnqk7pbKTIT9mba7l9wx0FTX3mc8Kq", clientKey:"SsGNNEBx6nUmxZKF3K9JmgeuiXA4khJQZvdgWAJ1")
+        
+        FBLoginView()
         return true
     }
 

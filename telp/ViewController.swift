@@ -13,8 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var facebookLoginButton = FBLoginView()
-        self.view.addSubview(facebookLoginButton)
+
+        
+//        var facebookLoginButton = FBLoginView()
+//        facebookLoginButton.frame = CGRectOffset(facebookLoginButton.frame, self.view.center.x, self.view.center.y)
+//        self.view.addSubview(facebookLoginButton)
         
     }
 
