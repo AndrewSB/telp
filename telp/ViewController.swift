@@ -8,9 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FBLoginViewDelegate {
     var email: String?
     var password: String?
+    
+    @IBOutlet weak var fbLoginView: FBLoginView!
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -24,7 +26,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        fbLoginView.readPermissions = ["public_profile", "email"]
+        fbLoginView.delegate = self
         
         
     }
@@ -40,14 +43,28 @@ class ViewController: UIViewController {
         newUser.username = newUser.email
         newUser.password = password
         
-        newUser.signUpInBackgroundWithBlock((succeeded: Bool, error: NSError) in {
-            if (!error) {
+        newUser.signUpInBackgroundWithBlock({(succeeded: Bool, error: NSError?) in
+            if (error == nil) {
                 // You're logged in
+                println("segue to like the form")
             } else {
-                var errorString = error.userInfo["error"]
+                var errorString = error!.userInfo
             }
             
             })
+    }
+    
+    
+    func loginViewFetchedUserInfo(loginView: FBLoginView!, user: FBGraphUser!) {
+        println("lol")
+    }
+    
+    func loginViewShowingLoggedInUser(loginView: FBLoginView!) {
+        println("lol")
+    }
+    
+    func loginViewShowingLoggedOutUser(loginView: FBLoginView!) {
+        println(loginView)
     }
 
 
