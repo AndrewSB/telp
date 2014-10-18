@@ -3,6 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -35,21 +36,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RA0-fG-V2g" customClass="FBLoginView">
-                                <rect key="frame" x="184" y="208" width="257" height="86"/>
+                                <rect key="frame" x="163" y="208" width="257" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RA0-fG-V2g" secondAttribute="height" multiplier="257:55" id="sFi-Fo-npn"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="RA0-fG-V2g" firstAttribute="top" secondItem="vXr-OC-Usc" secondAttribute="bottom" constant="144" id="loL-8K-HEZ"/>
-                            <constraint firstAttribute="centerY" secondItem="RA0-fG-V2g" secondAttribute="centerY" constant="49" id="zWF-Lu-kry"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Telp" id="cmC-8I-KpZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fsp-DU-F17" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="664" y="462"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bhp-8F-Qi4">
+            <objects>
+                <viewController id="3pc-98-u1g" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g5P-aU-vcV"/>
+                        <viewControllerLayoutGuide type="bottom" id="3gV-fR-aKD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rkp-5a-Xgw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FAQ-0o-gxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="1188"/>
         </scene>
     </scenes>
 </document>
