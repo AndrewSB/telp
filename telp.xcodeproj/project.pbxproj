@@ -27,6 +27,7 @@
 		4624D92B19F22C6400F6B5F8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D92A19F22C6400F6B5F8 /* StoreKit.framework */; };
 		4624D92D19F22C6D00F6B5F8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D92C19F22C6D00F6B5F8 /* SystemConfiguration.framework */; };
 		4624D93519F22CF400F6B5F8 /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624D93419F22CF400F6B5F8 /* CustomObject.m */; };
+		4624D93719F232FA00F6B5F8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D93619F232FA00F6B5F8 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		4624D92F19F22CAB00F6B5F8 /* telp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "telp-Bridging-Header.h"; sourceTree = "<group>"; };
 		4624D93319F22CF400F6B5F8 /* CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
 		4624D93419F22CF400F6B5F8 /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
+		4624D93619F232FA00F6B5F8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				4624D91819F22C0000F6B5F8 /* Parse.framework in Frameworks */,
 				4624D91719F22C0000F6B5F8 /* Bolts.framework in Frameworks */,
 				4624D91919F22C0000F6B5F8 /* ParseFacebookUtils.framework in Frameworks */,
+				4624D93719F232FA00F6B5F8 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +165,7 @@
 		4624D92E19F22C8800F6B5F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4624D93619F232FA00F6B5F8 /* FacebookSDK.framework */,
 				4624D92C19F22C6D00F6B5F8 /* SystemConfiguration.framework */,
 				4624D92A19F22C6400F6B5F8 /* StoreKit.framework */,
 				4624D92819F22C5C00F6B5F8 /* Social.framework */,
