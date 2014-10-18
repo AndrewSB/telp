@@ -13,6 +13,20 @@
 		4624D8FC19F22B0500F6B5F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4624D8FB19F22B0500F6B5F8 /* Images.xcassets */; };
 		4624D8FF19F22B0500F6B5F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4624D8FD19F22B0500F6B5F8 /* LaunchScreen.xib */; };
 		4624D90B19F22B0500F6B5F8 /* telpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624D90A19F22B0500F6B5F8 /* telpTests.swift */; };
+		4624D91719F22C0000F6B5F8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D91419F22C0000F6B5F8 /* Bolts.framework */; };
+		4624D91819F22C0000F6B5F8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D91519F22C0000F6B5F8 /* Parse.framework */; };
+		4624D91919F22C0000F6B5F8 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D91619F22C0000F6B5F8 /* ParseFacebookUtils.framework */; };
+		4624D91B19F22C2600F6B5F8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D91A19F22C2600F6B5F8 /* Accounts.framework */; };
+		4624D91D19F22C2D00F6B5F8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D91C19F22C2D00F6B5F8 /* AudioToolbox.framework */; };
+		4624D91F19F22C3400F6B5F8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D91E19F22C3400F6B5F8 /* CFNetwork.framework */; };
+		4624D92119F22C3C00F6B5F8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D92019F22C3C00F6B5F8 /* libz.dylib */; };
+		4624D92319F22C4400F6B5F8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D92219F22C4400F6B5F8 /* MobileCoreServices.framework */; };
+		4624D92519F22C4C00F6B5F8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D92419F22C4C00F6B5F8 /* QuartzCore.framework */; };
+		4624D92719F22C5600F6B5F8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D92619F22C5600F6B5F8 /* Security.framework */; };
+		4624D92919F22C5C00F6B5F8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D92819F22C5C00F6B5F8 /* Social.framework */; };
+		4624D92B19F22C6400F6B5F8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D92A19F22C6400F6B5F8 /* StoreKit.framework */; };
+		4624D92D19F22C6D00F6B5F8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D92C19F22C6D00F6B5F8 /* SystemConfiguration.framework */; };
+		4624D93519F22CF400F6B5F8 /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624D93419F22CF400F6B5F8 /* CustomObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +50,22 @@
 		4624D90419F22B0500F6B5F8 /* telpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = telpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4624D90919F22B0500F6B5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4624D90A19F22B0500F6B5F8 /* telpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telpTests.swift; sourceTree = "<group>"; };
+		4624D91419F22C0000F6B5F8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		4624D91519F22C0000F6B5F8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		4624D91619F22C0000F6B5F8 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		4624D91A19F22C2600F6B5F8 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		4624D91C19F22C2D00F6B5F8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4624D91E19F22C3400F6B5F8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4624D92019F22C3C00F6B5F8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4624D92219F22C4400F6B5F8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4624D92419F22C4C00F6B5F8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4624D92619F22C5600F6B5F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4624D92819F22C5C00F6B5F8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4624D92A19F22C6400F6B5F8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4624D92C19F22C6D00F6B5F8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4624D92F19F22CAB00F6B5F8 /* telp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "telp-Bridging-Header.h"; sourceTree = "<group>"; };
+		4624D93319F22CF400F6B5F8 /* CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
+		4624D93419F22CF400F6B5F8 /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +73,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4624D92D19F22C6D00F6B5F8 /* SystemConfiguration.framework in Frameworks */,
+				4624D92B19F22C6400F6B5F8 /* StoreKit.framework in Frameworks */,
+				4624D92919F22C5C00F6B5F8 /* Social.framework in Frameworks */,
+				4624D92719F22C5600F6B5F8 /* Security.framework in Frameworks */,
+				4624D92519F22C4C00F6B5F8 /* QuartzCore.framework in Frameworks */,
+				4624D92319F22C4400F6B5F8 /* MobileCoreServices.framework in Frameworks */,
+				4624D92119F22C3C00F6B5F8 /* libz.dylib in Frameworks */,
+				4624D91F19F22C3400F6B5F8 /* CFNetwork.framework in Frameworks */,
+				4624D91D19F22C2D00F6B5F8 /* AudioToolbox.framework in Frameworks */,
+				4624D91B19F22C2600F6B5F8 /* Accounts.framework in Frameworks */,
+				4624D91819F22C0000F6B5F8 /* Parse.framework in Frameworks */,
+				4624D91719F22C0000F6B5F8 /* Bolts.framework in Frameworks */,
+				4624D91919F22C0000F6B5F8 /* ParseFacebookUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +122,13 @@
 			children = (
 				4624D8F419F22B0500F6B5F8 /* AppDelegate.swift */,
 				4624D8F619F22B0500F6B5F8 /* ViewController.swift */,
+				4624D93319F22CF400F6B5F8 /* CustomObject.h */,
+				4624D93419F22CF400F6B5F8 /* CustomObject.m */,
 				4624D8F819F22B0500F6B5F8 /* Main.storyboard */,
 				4624D8FB19F22B0500F6B5F8 /* Images.xcassets */,
 				4624D8FD19F22B0500F6B5F8 /* LaunchScreen.xib */,
 				4624D8F219F22B0500F6B5F8 /* Supporting Files */,
+				4624D92F19F22CAB00F6B5F8 /* telp-Bridging-Header.h */,
 			);
 			path = telp;
 			sourceTree = "<group>";
@@ -90,6 +136,7 @@
 		4624D8F219F22B0500F6B5F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4624D92E19F22C8800F6B5F8 /* Frameworks */,
 				4624D8F319F22B0500F6B5F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +157,26 @@
 				4624D90919F22B0500F6B5F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4624D92E19F22C8800F6B5F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4624D92C19F22C6D00F6B5F8 /* SystemConfiguration.framework */,
+				4624D92A19F22C6400F6B5F8 /* StoreKit.framework */,
+				4624D92819F22C5C00F6B5F8 /* Social.framework */,
+				4624D92619F22C5600F6B5F8 /* Security.framework */,
+				4624D92419F22C4C00F6B5F8 /* QuartzCore.framework */,
+				4624D92219F22C4400F6B5F8 /* MobileCoreServices.framework */,
+				4624D92019F22C3C00F6B5F8 /* libz.dylib */,
+				4624D91E19F22C3400F6B5F8 /* CFNetwork.framework */,
+				4624D91C19F22C2D00F6B5F8 /* AudioToolbox.framework */,
+				4624D91A19F22C2600F6B5F8 /* Accounts.framework */,
+				4624D91419F22C0000F6B5F8 /* Bolts.framework */,
+				4624D91519F22C0000F6B5F8 /* Parse.framework */,
+				4624D91619F22C0000F6B5F8 /* ParseFacebookUtils.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4624D8F719F22B0500F6B5F8 /* ViewController.swift in Sources */,
+				4624D93519F22CF400F6B5F8 /* CustomObject.m in Sources */,
 				4624D8F519F22B0500F6B5F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,9 +406,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/telp",
+				);
 				INFOPLIST_FILE = telp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "telp/telp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,9 +424,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/telp",
+				);
 				INFOPLIST_FILE = telp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "telp/telp-Bridging-Header.h";
 			};
 			name = Release;
 		};
