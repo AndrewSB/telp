@@ -4,6 +4,7 @@
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -36,20 +37,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RA0-fG-V2g" customClass="FBLoginView">
-                                <rect key="frame" x="40" y="263" width="520" height="73"/>
+                                <rect key="frame" x="40" y="263" width="307" height="73"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="6w1-pd-pkS"/>
                                     <constraint firstAttribute="width" secondItem="RA0-fG-V2g" secondAttribute="height" multiplier="307:73" id="rii-6b-92w"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WdK-6N-HVM">
+                                <rect key="frame" x="229" y="378" width="143" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="0Ag-pX-vqd"/>
+                                    <constraint firstAttribute="width" secondItem="WdK-6N-HVM" secondAttribute="height" multiplier="143:30" id="czz-rY-cVW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-Aa-Gqc">
+                                <rect key="frame" x="279" y="481" width="43" height="30"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nlp-TT-mwl">
+                                <rect key="frame" x="229" y="432" width="143" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nlp-TT-mwl" secondAttribute="height" multiplier="143:30" id="qhL-iX-RXR"/>
+                                    <constraint firstAttribute="width" constant="143" id="vUh-Ov-FDO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="nlp-TT-mwl" secondAttribute="centerX" constant="-0.5" id="0ZY-Ow-9sA"/>
+                            <constraint firstItem="nlp-TT-mwl" firstAttribute="top" secondItem="WdK-6N-HVM" secondAttribute="bottom" constant="24" id="6xU-ie-EQh"/>
+                            <constraint firstAttribute="centerX" secondItem="3xW-Aa-Gqc" secondAttribute="centerX" constant="-0.5" id="79H-o9-y6O"/>
                             <constraint firstAttribute="centerX" secondItem="RA0-fG-V2g" secondAttribute="centerX" id="7qf-iv-3uR"/>
+                            <constraint firstAttribute="centerX" secondItem="WdK-6N-HVM" secondAttribute="centerX" constant="-0.5" id="9yl-gs-G0F"/>
                             <constraint firstItem="RA0-fG-V2g" firstAttribute="leading" secondItem="vxC-Pw-9tH" secondAttribute="leading" constant="40" id="DH6-mC-7Av"/>
                             <constraint firstAttribute="trailing" secondItem="RA0-fG-V2g" secondAttribute="trailing" constant="40" id="KvF-Z6-gjW"/>
+                            <constraint firstItem="nlp-TT-mwl" firstAttribute="leading" secondItem="vxC-Pw-9tH" secondAttribute="leadingMargin" constant="213" id="cMd-os-hpn"/>
+                            <constraint firstItem="WdK-6N-HVM" firstAttribute="leading" secondItem="vxC-Pw-9tH" secondAttribute="leadingMargin" constant="213" id="cnO-9f-jsH"/>
+                            <constraint firstItem="3xW-Aa-Gqc" firstAttribute="top" secondItem="nlp-TT-mwl" secondAttribute="bottom" constant="19" id="us9-NF-lNb"/>
                             <constraint firstItem="RA0-fG-V2g" firstAttribute="top" secondItem="vXr-OC-Usc" secondAttribute="bottom" constant="199" id="xxH-ys-leA"/>
+                            <constraint firstItem="WdK-6N-HVM" firstAttribute="top" secondItem="RA0-fG-V2g" secondAttribute="bottom" constant="42" id="z93-Xq-3fJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Telp" id="cmC-8I-KpZ"/>
