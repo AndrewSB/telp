@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9TY-HZ-X0l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9TY-HZ-X0l">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="gsd-W8-H2n">
             <objects>
-                <navigationController id="9TY-HZ-X0l" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="9TY-HZ-X0l" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eao-Bs-606">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-158" y="462"/>
         </scene>
-        <!--Telp-->
+        <!--View Controller-->
         <scene sceneID="5Wm-hF-hQw">
             <objects>
                 <viewController id="jGZ-NH-RaC" customClass="ViewController" customModule="telp" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,8 +35,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nlp-TT-mwl">
-                                <rect key="frame" x="229" y="310" width="143" height="30"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0B-y3-T0m">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nlp-TT-mwl">
+                                <rect key="frame" x="229" y="266" width="143" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nlp-TT-mwl" secondAttribute="height" multiplier="143:30" id="qhL-iX-RXR"/>
                                     <constraint firstAttribute="width" constant="143" id="vUh-Ov-FDO"/>
@@ -44,8 +48,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WdK-6N-HVM">
-                                <rect key="frame" x="229" y="269" width="143" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WdK-6N-HVM">
+                                <rect key="frame" x="229" y="225" width="143" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="0Ag-pX-vqd"/>
                                     <constraint firstAttribute="width" secondItem="WdK-6N-HVM" secondAttribute="height" multiplier="143:30" id="czz-rY-cVW"/>
@@ -53,8 +57,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-Aa-Gqc">
-                                <rect key="frame" x="279" y="351" width="43" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-Aa-Gqc">
+                                <rect key="frame" x="279" y="307" width="43" height="30"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -63,27 +67,42 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RA0-fG-V2g" customClass="FBLoginView">
-                                <rect key="frame" x="174" y="189" width="252" height="60"/>
+                                <rect key="frame" x="0.0" y="529" width="300" height="71"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="6w1-pd-pkS"/>
-                                    <constraint firstAttribute="width" secondItem="RA0-fG-V2g" secondAttribute="height" multiplier="307:73" id="rii-6b-92w"/>
+                                    <constraint firstAttribute="height" constant="71" id="dUz-Ki-Nty"/>
+                                    <constraint firstAttribute="width" secondItem="RA0-fG-V2g" secondAttribute="height" multiplier="300:71" id="edk-ja-8ke"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysT-y1-7eW">
+                                <rect key="frame" x="300" y="529" width="300" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="6V1-eK-YGr"/>
+                                    <constraint firstAttribute="width" secondItem="ysT-y1-7eW" secondAttribute="height" multiplier="300:71" id="qZL-gd-koh"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="forwardarrow.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="nlp-TT-mwl" secondAttribute="centerX" constant="-0.5" id="0ZY-Ow-9sA"/>
+                            <constraint firstAttribute="bottom" secondItem="C0B-y3-T0m" secondAttribute="bottom" id="2LC-Tf-Pzs"/>
                             <constraint firstItem="nlp-TT-mwl" firstAttribute="top" secondItem="WdK-6N-HVM" secondAttribute="bottom" constant="11" id="6xU-ie-EQh"/>
                             <constraint firstAttribute="centerX" secondItem="3xW-Aa-Gqc" secondAttribute="centerX" constant="-0.5" id="79H-o9-y6O"/>
-                            <constraint firstAttribute="centerX" secondItem="RA0-fG-V2g" secondAttribute="centerX" id="7qf-iv-3uR"/>
                             <constraint firstAttribute="centerX" secondItem="WdK-6N-HVM" secondAttribute="centerX" constant="-0.5" id="9yl-gs-G0F"/>
+                            <constraint firstItem="C0B-y3-T0m" firstAttribute="top" secondItem="vxC-Pw-9tH" secondAttribute="top" id="C9q-jc-paI"/>
+                            <constraint firstAttribute="trailing" secondItem="C0B-y3-T0m" secondAttribute="trailing" id="ItM-kv-ud8"/>
+                            <constraint firstItem="RA0-fG-V2g" firstAttribute="leading" secondItem="vxC-Pw-9tH" secondAttribute="leading" id="KLc-iM-ec1"/>
+                            <constraint firstAttribute="bottom" secondItem="ysT-y1-7eW" secondAttribute="bottom" id="KmX-XI-fX9"/>
+                            <constraint firstItem="C0B-y3-T0m" firstAttribute="leading" secondItem="vxC-Pw-9tH" secondAttribute="leading" id="oDc-aR-Ofg"/>
+                            <constraint firstAttribute="trailing" secondItem="ysT-y1-7eW" secondAttribute="trailing" id="oRs-pZ-I2C"/>
+                            <constraint firstAttribute="bottom" secondItem="RA0-fG-V2g" secondAttribute="bottom" id="r1O-a7-aBu"/>
                             <constraint firstItem="3xW-Aa-Gqc" firstAttribute="top" secondItem="nlp-TT-mwl" secondAttribute="bottom" constant="11" id="us9-NF-lNb"/>
-                            <constraint firstItem="RA0-fG-V2g" firstAttribute="top" secondItem="vXr-OC-Usc" secondAttribute="bottom" constant="125" id="xxH-ys-leA"/>
-                            <constraint firstItem="WdK-6N-HVM" firstAttribute="top" secondItem="RA0-fG-V2g" secondAttribute="bottom" constant="20" id="z93-Xq-3fJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Telp" id="cmC-8I-KpZ"/>
+                    <navigationItem key="navigationItem" id="cmC-8I-KpZ"/>
                     <connections>
                         <outlet property="emailTextField" destination="WdK-6N-HVM" id="BeE-s5-UIc"/>
                         <outlet property="fbLoginView" destination="RA0-fG-V2g" id="jyX-57-pIZ"/>
@@ -114,4 +133,7 @@
             <point key="canvasLocation" x="662" y="1188"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="forwardarrow.png" width="8" height="13"/>
+    </resources>
 </document>

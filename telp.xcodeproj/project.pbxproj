@@ -29,6 +29,7 @@
 		4624D93519F22CF400F6B5F8 /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624D93419F22CF400F6B5F8 /* CustomObject.m */; };
 		4624D93719F232FA00F6B5F8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4624D93619F232FA00F6B5F8 /* FacebookSDK.framework */; };
 		46715BB719F23803004185F7 /* HelpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46715BB619F23803004185F7 /* HelpFormViewController.swift */; };
+		468BE63419FEDCFA0014572C /* railway.gif in Resources */ = {isa = PBXBuildFile; fileRef = 468BE63319FEDCFA0014572C /* railway.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		4624D93419F22CF400F6B5F8 /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
 		4624D93619F232FA00F6B5F8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = telp/FacebookSDK.framework; sourceTree = "<group>"; };
 		46715BB619F23803004185F7 /* HelpFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpFormViewController.swift; sourceTree = "<group>"; };
+		468BE63319FEDCFA0014572C /* railway.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = railway.gif; sourceTree = "<group>"; };
 		C913B2940C8646D798F89181 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 				4624D8F819F22B0500F6B5F8 /* Main.storyboard */,
 				4624D8FB19F22B0500F6B5F8 /* Images.xcassets */,
 				4624D8FD19F22B0500F6B5F8 /* LaunchScreen.xib */,
+				468BE63319FEDCFA0014572C /* railway.gif */,
 				4624D8F219F22B0500F6B5F8 /* Supporting Files */,
 				4624D92F19F22CAB00F6B5F8 /* telp-Bridging-Header.h */,
 			);
@@ -272,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468BE63419FEDCFA0014572C /* railway.gif in Resources */,
 				4624D8FA19F22B0500F6B5F8 /* Main.storyboard in Resources */,
 				4624D8FF19F22B0500F6B5F8 /* LaunchScreen.xib in Resources */,
 				4624D8FC19F22B0500F6B5F8 /* Images.xcassets in Resources */,
